@@ -1,0 +1,53 @@
+{
+  "name": "machines_captured",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": false
+    },
+    "history_id": {
+      "type": "number",
+      "required": true
+    },
+    "data_name": {
+      "type": "string",
+      "required": true
+    },
+    "quantifier": {
+      "type": "string",
+      "required": true
+    },
+    "data_type": {
+      "type": "string",
+      "required": true
+    },
+    "data_number": {
+      "type": "number",
+      "required": true
+    },
+    "data_varchar": {
+      "type": "string",
+      "required": true
+    },
+    "created_at": {
+      "type": "date",
+      "required": true,
+      "default": "$now"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "machine": {
+      "type": "belongsTo",
+      "model": "machines_history",
+      "foreignKey": "history_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

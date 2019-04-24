@@ -1,0 +1,45 @@
+{
+  "name": "machines_nedded",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": false
+    },
+    "machine_id": {
+      "type": "number",
+      "required": true
+    },
+    "data_name": {
+      "type": "string",
+      "required": true
+    },
+    "quantifier": {
+      "type": "string",
+      "required": true
+    },
+    "data_type": {
+      "type": "string",
+      "required": true
+    },
+    "created_at": {
+      "type": "date",
+      "required": true,
+      "default": "$now"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "machine": {
+      "type": "belongsTo",
+      "model": "machines",
+      "foreignKey": "machine_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

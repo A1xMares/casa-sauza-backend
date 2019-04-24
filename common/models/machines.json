@@ -1,0 +1,62 @@
+{
+  "name": "machines",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": false
+    },
+    "machine_name": {
+      "type": "string",
+      "required": true
+    },
+    "machine_model": {
+      "type": "string",
+      "required": true
+    },
+    "assurance_code": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "serial_number": {
+      "type": "string",
+      "required": true
+    },
+    "machine_qr": {
+      "type": "string",
+      "required": true
+    },
+    "maintenance_interval": {
+      "type": "number",
+      "required": true
+    },
+    "maintenance_unit": {
+      "type": "string",
+      "required": true
+    },
+    "last_maintenance": {
+      "type": "date",
+      "required": false
+    },
+    "img_url": {
+      "type": "string",
+      "required": false
+    },
+    "created_at": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

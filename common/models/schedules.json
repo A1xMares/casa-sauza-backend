@@ -1,0 +1,58 @@
+{
+  "name": "schedules",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": false
+    },
+    "machine_id": {
+      "type": "number",
+      "required": true
+    },
+    "user_id": {
+      "type": "string",
+      "required": true
+    },
+    "day": {
+      "type": "string",
+      "required": true
+    },
+    "interval": {
+      "type": "number",
+      "required": true
+    },
+    "startHour": {
+      "type": "number",
+      "required": true
+    },
+    "endHour": {
+      "type": "number",
+      "required": true
+    },
+    "created_at": {
+      "type": "date",
+      "required": true,
+      "default": "$now"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "machine": {
+      "type": "belongsTo",
+      "model": "machines",
+      "foreignKey": "machine_id"
+    },
+    "user": {
+      "type": "belongsTo",
+      "model": "users",
+      "foreignKey": "user_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "asd": {
+    "host": "localhost",
+    "port": 3306,
+    "url": "",
+    "database": "sauza_app",
+    "password": "password",
+    "name": "asd",
+    "user": "root",
+    "connector": "mysql"
+  }
+}
