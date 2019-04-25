@@ -5,7 +5,7 @@
     "url": "",
     "database": "sauza_app",
     "password": "password",
-    "name": "asd",
+    "name": "db",
     "user": "root",
     "connector": "mysql"
   }
