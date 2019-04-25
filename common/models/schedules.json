@@ -22,7 +22,7 @@
       "type": "string",
       "required": true
     },
-    "interval": {
+    "data_interval": {
       "type": "number",
       "required": true
     },

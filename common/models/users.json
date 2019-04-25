@@ -1,6 +1,6 @@
 {
   "name": "users",
-  "base": "PersistedModel",
+  "base": "User",
   "idInjection": true,
   "options": {
     "validateUpsert": true
@@ -10,16 +10,12 @@
       "type": "number",
       "required": false
     },
-    "user_name": {
-      "type": "string",
-      "required": true
-    },
     "role": {
       "type": "string",
       "required": true
     },
     "phone": {
-      "type": "string",
+      "type": "number",
       "required": true
     },
     "user_nick": {
@@ -34,10 +30,31 @@
       "type": "string",
       "required": true
     },
+    "realm": {
+      "type": "string",
+      "required": true
+    },
+    "username": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": false
+    },
+    "emailVerified": {
+      "type": "bool",
+      "required": true,
+      "default": true
+    },
     "created_at": {
       "type": "date",
       "required": true,
       "default": "$now"
+    },
+    "verificationToken": {
+      "type": "string",
+      "required": false
     }
   },
   "validations": [],
