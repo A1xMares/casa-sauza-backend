@@ -1,6 +1,6 @@
 {
   "name": "users",
-  "base": "User",
+  "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
@@ -23,6 +23,10 @@
       "required": true
     },
     "user_nick": {
+      "type": "string",
+      "required": true
+    },
+    "user_qr": {
       "type": "string",
       "required": true
     },
