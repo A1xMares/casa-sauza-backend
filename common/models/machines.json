@@ -46,13 +46,13 @@
       "type": "date",
       "required": false
     },
-    "area": {
+    "areaId": {
       "type": "number",
-      "required": false
+      "required": true
     },
-    "machine_type": {
+    "machine_typeId": {
       "type": "number",
-      "required": false
+      "required": true
     },
     "img_url": {
       "type": "string",
@@ -66,14 +66,16 @@
   "validations": [],
   "relations": {
     "machine_type": {
-      "type": "hasOne",
+      "type": "belongsTo",
       "model": "machine_types",
-      "foreignKey": "machine_type"
+      "foreignKey": "machine_typeId",
+      "primaryKey": "id"
     },
     "area": {
-      "type": "hasOne",
+      "type": "belongsTo",
       "model": "areas",
-      "foreignKey": "area"
+      "foreignKey": "areaId",
+      "primaryKey": "id"
     }
   },
   "acls": [],

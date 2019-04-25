@@ -1,10 +1,10 @@
 {
   "db": {
     "host": "localhost",
-    "port": 3306,
+    "port": 8889,
     "url": "",
     "database": "sauza_app",
-    "password": "password",
+    "password": "root",
     "name": "db",
     "user": "root",
     "connector": "mysql"
