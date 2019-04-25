@@ -38,7 +38,7 @@
   },
   "validations": [],
   "relations": {
-    "notificationSettings": {
+    "notes": {
       "type": "hasOne",
       "model": "notes",
       "foreignKey": "id"

@@ -46,6 +46,14 @@
       "type": "date",
       "required": false
     },
+    "area": {
+      "type": "number",
+      "required": false
+    },
+    "machine_type": {
+      "type": "number",
+      "required": false
+    },
     "img_url": {
       "type": "string",
       "required": false
@@ -56,7 +64,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "machine_type": {
+      "type": "hasOne",
+      "model": "machine_types",
+      "foreignKey": "machine_type"
+    },
+    "area": {
+      "type": "hasOne",
+      "model": "areas",
+      "foreignKey": "area"
+    }
+  },
   "acls": [],
   "methods": {}
 }

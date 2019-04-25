@@ -37,31 +37,39 @@
     "public": false
   },
   "users": {
-    "dataSource": "asd",
+    "dataSource": "db",
     "public": true
   },
   "schedules": {
-    "dataSource": "asd",
+    "dataSource": "db",
     "public": true
   },
   "notes": {
-    "dataSource": "asd",
+    "dataSource": "db",
     "public": true
   },
   "machines_history": {
-    "dataSource": "asd",
+    "dataSource": "db",
     "public": true
   },
   "machines_captured": {
-    "dataSource": "asd",
+    "dataSource": "db",
     "public": true
   },
   "machines_nedded": {
-    "dataSource": "asd",
+    "dataSource": "db",
     "public": true
   },
   "machines": {
-    "dataSource": "asd",
+    "dataSource": "db",
+    "public": true
+  },
+  "areas": {
+    "dataSource": "db",
+    "public": true
+  },
+  "machine_types": {
+    "dataSource": "db",
     "public": true
   }
 }
